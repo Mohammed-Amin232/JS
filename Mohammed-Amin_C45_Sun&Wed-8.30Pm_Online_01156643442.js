@@ -2,163 +2,158 @@
 
 // A. Part 1:
 //Q1
-// var x = "123";
-// var result = Number(x) + 7;
-// console.log({result});
+var x = "123";
+var result = Number(x) + 7;
+console.log({result});
 //
 //Q2
-// var x = 0;
-// x > 0 ? console.log(Boolean(x)) : console.log("Invalid");
+var x = 0;
+x > 0 ? console.log(Boolean(x)) : console.log("Invalid");
 //
 //Q3
-// for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 10; i++) {
 
-//     if (i % 2 == 0) continue;
-//     console.log(i);
-// }
+     if (i % 2 == 0) continue;
+     console.log(i);
+ }
 //
 //Q4
-// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// const evenArr = arr.filter((ele, index, arr) => {
-//     return ele % 2 == 0
-// })
-// console.log(evenArr);
+ const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ const evenArr = arr.filter((ele, index, arr) => {
+     return ele % 2 == 0
+ })
+ console.log(evenArr);
 //
 //Q5
-// const arr1 = [1,2,3]
-// const arr2 = [4,5,6]
+ const arr1 = [1,2,3]
+ const arr2 = [4,5,6]
 
-// const result = [...arr1,...arr2]
-// console.log(result);
-
-
+ const result = [...arr1,...arr2]
+ console.log(result);
 //
 //Q6
-// var day = 5;
-// switch (day) {
-//     case 1:
-//         console.log("Sunday");
-//         break;
-//     case 2:
-//          console.log("Monday");
-//         break;
-//     case 3:
-//          console.log("Tuesday");
-//         break;
-//     case 4:
-//          console.log("Wednesday");
-//         break;
-//     case 5:
-//          console.log("Thursday");
-//         break;
-//     case 6:
-//          console.log("Friday");
-//         break;
-//     case 7:
-//          console.log("Saturday");
-//         break;
+ var day = 5;
+ switch (day) {
+     case 1:
+         console.log("Sunday");
+         break;
+     case 2:
+          console.log("Monday");
+         break;
+     case 3:
+          console.log("Tuesday");
+         break;
+     case 4:
+          console.log("Wednesday");
+         break;
+     case 5:
+          console.log("Thursday");
+         break;
+     case 6:
+          console.log("Friday");
+         break;
+     case 7:
+          console.log("Saturday");
+         break;
 
-//     default:
-//          console.log("Invalid number!");
-//         break;
-// }
+     default:
+          console.log("Invalid number!");
+         break;
+ }
 //
 //Q7
-// const arr = ["a", "ab", "abc"]
-// const lengths = arr.map((ele,index,arr) => {
-//     return ele.length;
-// })
-// console.log(lengths);
+ const arr = ["a", "ab", "abc"]
+ const lengths = arr.map((ele,index,arr) => {
+     return ele.length;
+ })
+ console.log(lengths);
 
 //
 //Q8
-// function isDivisible(num) {
-//     if (num % 3 == 0 && num % 5 == 0) {
-//         console.log("Divisible by both");
-//     }
-//     else if (num % 3 == 0 && num % 5 != 0) {
-//         console.log("Divisible by 3 only");
-//     }
-//     else if (num % 3 != 0 && num % 5 == 0) {
-//         console.log("Divisible by 5 only");
-//     }
-//     else console.log("Not divisible by both");
-// }
+ function isDivisible(num) {
+     if (num % 3 == 0 && num % 5 == 0) {
+         console.log("Divisible by both");
+     }
+     else if (num % 3 == 0 && num % 5 != 0) {
+         console.log("Divisible by 3 only");
+     }
+     else if (num % 3 != 0 && num % 5 == 0) {
+         console.log("Divisible by 5 only");
+     }
+     else console.log("Not divisible by both");
+ }
 
-// const x = 15
-// isDivisible(x)
-//
+ const x = 15
+ isDivisible(x)
 //
 //Q9
-// const squareOfNum = num => num*num ;
-
-// const x =5
-// console.log(squareOfNum(x));
+ const squareOfNum = num => num*num ;
+ const x =5
+ console.log(squareOfNum(x));
 //
 //Q10
-// function destruct(data={}) {
-//     const{name,age} = data
-//     console.log(name + " is " + age + " years old");
+ function destruct(data={}) {
+     const{name,age} = data
+     console.log(name + " is " + age + " years old");
+ }
 
-// }
-
-// const person = {name: 'John', age: 25}
-// destruct(person)
+ const person = {name: 'John', age: 25}
+ destruct(person)
 //
 //Q11
-// function sum(data = {}) {
-//     const { n1, n2, n3 = 0, n4 = 0, n5 = 0 } = data
-//     const result = n1 + n2 + n3 + n4 + n5
-//     return result
-// }
+ function sum(data = {}) {
+     const { n1, n2, n3 = 0, n4 = 0, n5 = 0 } = data
+     const result = n1 + n2 + n3 + n4 + n5
+     return result
+ }
 
-// console.log(sum({n1:1,n2:3}));
+ console.log(sum({n1:1,n2:3}));
+//
 //Q12
-// function success() {
-//     return new Promise((resolve, reject) => {
-//         console.log("Waiting ...");
+ function success() {
+     return new Promise((resolve, reject) => {
+         console.log("Waiting ...");
         
-//         setTimeout(() => {
-//             resolve("Success")
-//         },3000)
-//     })
-// }
-// success().then((data) => {
-//     console.log(data);
+         setTimeout(() => {
+             resolve("Success")
+         },3000)
+     })
+ }
+ success().then((data) => {
+     console.log(data);
     
-// })
+ })
 
 
 //Q13
-// function maxElement (array){
-// return Math.max(...array)
-// }
-// function maximum (array) {
-//     let max = array[0]
-//     for (let i = 0; i < array.length; i++) {
-//         if(array[i] > max) max = array[i]
-//     }
-//     return max
-// }
+ function maxElement (array){
+ return Math.max(...array)
+ }
+ function maximum (array) {
+     let max = array[0]
+     for (let i = 0; i < array.length; i++) {
+         if(array[i] > max) max = array[i]
+     }
+     return max
+ }
 
-// const arr = [1, 3, 7, 2, 4, 25, 17, 82, -125]
-// console.log(maximum(arr));
-
+ const arr = [1, 3, 7, 2, 4, 25, 17, 82, -125]
+ console.log(maximum(arr));
 //
 //Q14
-// function keys(obj) {
-//     return Object.keys(obj)
-// }
-// const person = { name: 'John', age: 25, gender: 'male' }
-// console.log(keys(person))
+ function keys(obj) {
+     return Object.keys(obj)
+ }
+ const person = { name: 'John', age: 25, gender: 'male' }
+ console.log(keys(person))
 //
 //Q15
-// function split (x) {
-//     console.log(x.split(" "));
-// }
+ function split (x) {
+     console.log(x.split(" "));
+ }
 
-// var x = "The Quik Brown Box"
-// split(x)
+ var x = "The Quik Brown Box"
+ split(x)
 
 
 //B. Part 2:
@@ -188,3 +183,4 @@
 //(12 + "5") => (+ concatnation) => "125"
 //(12 - "5") => 8 ("5 will be number")
 //(12 * false) => 0 (false will be 0)
+
